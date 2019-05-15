@@ -15,7 +15,7 @@ class BookTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("REALMFILE: \(Realm.Configuration.defaultConfiguration.fileURL)")
         books = BookItem.getAll()
     }
 
